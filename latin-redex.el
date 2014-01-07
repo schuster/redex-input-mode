@@ -33,9 +33,10 @@
 
 ;; This is a modified version of the TeX input mode for use with PLT Redex
 ;; (http://redex.racket-lang.org/). All bindings are left intact except for
-;; those that use the underscore and hyphen characters, as the underscore is
-;; used for other purposes within Redex, and a line of hyphens is often used in
-;; comments to denote sections of code.
+;; those that use the underscore (_), hyphen (-), and tilde (~) characters, as
+;; the underscore is used for other purposes within Redex, a line of hyphens is
+;; often used in comments to denote sections of code, and the tilde is used for
+;; formatting in printf.
 
 ;; Install by copying to an appropriate directory (e.g. ~/.emacs.d/elisp) and adding the following code to your .emacs, changing the path if necessary:
 ;;
@@ -918,7 +919,7 @@ system, including many technical ones.  Examples:
  ("\\Bbb{Z}" ?ℤ)
 ;; ("--" ?–)
 ;; ("---" ?—)
- ("~" ? )				; nbsp
+;; ("~" ? )				; nbsp
  ("\\mu" ?μ)
  ("\\rho" ?ρ)
  ("\\mathscr{I}" ?ℐ)			; moment of inertia
